@@ -1,9 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-function Home() {
+function HomePage() {
   return (
     <div className="container">
+      HOME PAGE
       <div>
         <ul className="links">
           <li>
@@ -27,4 +28,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default HomePage;

@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Home from "./components/Home.jsx";
+import HomePage from "./components/Landings/HomePage.jsx";
+import ContactPage from "./components/Landings/ContactPage.jsx";
+
 
 
 
@@ -12,9 +14,9 @@ const App = () => {
     <Router>
       <div className="App">
         <Routes>
-          <Route exact path="/" element={<Home />}></Route>
-          <Route exact path="/nuestro-espacio" element={<Home />}></Route>
-          <Route exact path="/contact" element={<Home />}></Route>
+          <Route exact path="/" element={<HomePage />}></Route>
+          {/* <Route exact path="/nuestro-espacio" element={<HomePage />}></Route> */}
+          <Route exact path="/contact" element={<ContactPage />}></Route>
         </Routes>
       </div>
     </Router>
