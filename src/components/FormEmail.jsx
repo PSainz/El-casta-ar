@@ -5,7 +5,7 @@ const TEMPLATE_ID = "template_wub1dxz";
 const SERVICE_ID = "service_26yf25i";
 const USER_ID = "f_3MQYQpNjkFfysX9";
 
-console.log(TEMPLATE_ID);
+// console.log(TEMPLATE_ID);
 
 const FormEmail = () => {
   const [toSend, setToSend] = useState({
@@ -38,10 +38,11 @@ const FormEmail = () => {
 
   const handleChange = (e) => {
     setToSend({ ...toSend, [e.target.name]: e.target.value });
+    console.log({ ...toSend, [e.target.name]: e.target.value }, "ggg");
   };
 
   return (
-    <div className="Form">
+    <div className="form">
       <form onSubmit={onSubmit}>
         <input
           type="text"
@@ -49,6 +50,7 @@ const FormEmail = () => {
           placeholder="Name"
           value={toSend.name}
           onChange={handleChange}
+          required
         />
 
         <input
@@ -57,6 +59,7 @@ const FormEmail = () => {
           placeholder="Last Name"
           value={toSend.last_name}
           onChange={handleChange}
+          required
         />
 
         <input
@@ -65,6 +68,7 @@ const FormEmail = () => {
           placeholder="email"
           value={toSend.email}
           onChange={handleChange}
+          required
         />
         <input
           type="text"
@@ -72,6 +76,7 @@ const FormEmail = () => {
           placeholder="phone"
           value={toSend.phone}
           onChange={handleChange}
+          required
         />
         <input
           type="text"
@@ -79,6 +84,7 @@ const FormEmail = () => {
           placeholder="Event Type"
           value={toSend.event_typeone}
           onChange={handleChange}
+          required
         />
         <input
           type="text"
