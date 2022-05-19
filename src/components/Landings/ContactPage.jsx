@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import FormEmail from "../FormEmail";
 import Form from "../Form/Form";
 
 function ContactPage() {
@@ -25,7 +24,6 @@ function ContactPage() {
             </Link>
           </li>
         </ul>
-        <FormEmail />
         <Form />
       </div>
     </div>
