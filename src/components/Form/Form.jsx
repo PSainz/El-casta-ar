@@ -92,7 +92,7 @@ const Form = () => {
           dirty,
         } = formik;
         return (
-          <div className="container">
+          <div className="container-form">
             <form onSubmit={handleSubmit}>
               <div className="form-row">
                 <label htmlFor="name">Nombre</label>
@@ -101,6 +101,7 @@ const Form = () => {
                   name="name"
                   id="name"
                   value={values.name}
+                  label="Nombre"
                   onChange={handleChange}
                   onBlur={handleBlur}
                   className={errors.name && touched.name ? "input-error" : null}

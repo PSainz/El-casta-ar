@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
 
-function HomePage() {
+function OurSpacePage() {
   return (
     <div className="container">
       <Navbar />
@@ -9,4 +9,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default OurSpacePage;
