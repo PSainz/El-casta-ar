@@ -1,12 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { Formik } from "formik";
 import { send } from "emailjs-com";
-import { useNavigate } from "react-router-dom";
 import "./Form.scss";
 
-const TEMPLATE_ID = "template_wub1dxz";
-const SERVICE_ID = "service_26yf25i";
-const USER_ID = "f_3MQYQpNjkFfysX9";
+const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+const USER_ID = process.env.REACT_APP_USER_ID;
 
 const Form = () => {
   const initialValues = {
