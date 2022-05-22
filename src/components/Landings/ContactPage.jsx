@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Form from "../Form/Form";
 import Navbar from "../Navbar/Navbar";
 import Map from "../Gmaps/Map";
+import Preefoter from "../Prefooter/Prefooter";
+import Footer from "../Footer/Footer";
 import "./Landings.scss";
 
 function ContactPage() {
@@ -11,10 +13,15 @@ function ContactPage() {
       <Navbar />
       <div className="full-wrapper-contact-page">
         <div className="wrapper-contact-page">
-          <Form />
-          <Map />
+          <div className="flex">
+            <Form />
+            <div className="width"></div>
+            <Map />
+          </div>
         </div>
       </div>
+      <Preefoter />
+      <Footer />
     </div>
   );
 }

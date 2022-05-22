@@ -2,12 +2,11 @@ import React, { useState } from "react";
 import "./Navbar.scss";
 
 function Navbar() {
+  const src = "./images/logo-footer.png";
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   return (
     <nav className="navigation">
-      <a href="/" className="brand-name">
-        MacroSoft
-      </a>
+      <img className="log-nav" src={src} alt="logo-nav" />
       <button
         className="hamburger"
         onClick={() => {

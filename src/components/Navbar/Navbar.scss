@@ -5,9 +5,12 @@
   align-items: center;
   position: relative;
   padding: 0.5rem 0rem;
-  background-color: #fff;
+  background-color: black;
   color: black;
   box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
 .brand-name {
   text-decoration: none;
@@ -20,6 +23,9 @@
 }
 .navigation-menu ul {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   padding: 0;
 }
 .navigation-menu li {
@@ -29,6 +35,7 @@
 }
 .navigation-menu li a {
   // increases the surface area of the anchor tag to span more than just the anchor text
+  color: #a67c52;
   text-decoration: none;
   display: block;
   width: 100%;
@@ -53,6 +60,11 @@
 .hamburger:hover {
   background-color: #2642af;
 }
+nav img {
+  padding: 5px;
+  width: 8%;
+}
+
 @media screen and (max-width: 768px) {
   .hamburger {
     display: block;

@@ -95,13 +95,12 @@ const Form = () => {
           <div className="container-form">
             <form onSubmit={handleSubmit}>
               <div className="form-row">
-                <label htmlFor="name">Nombre</label>
                 <input
                   type="name"
                   name="name"
                   id="name"
                   value={values.name}
-                  label="Nombre"
+                  placeholder="Nombre"
                   onChange={handleChange}
                   onBlur={handleBlur}
                   className={errors.name && touched.name ? "input-error" : null}
@@ -111,10 +110,10 @@ const Form = () => {
                 )}
               </div>
               <div className="form-row">
-                <label htmlFor="last_name">Apellidos</label>
                 <input
                   type="last_name"
                   name="last_name"
+                  placeholder="Apellidos"
                   id="last_name"
                   value={values.last_name}
                   onChange={handleChange}
@@ -128,10 +127,10 @@ const Form = () => {
                 )}
               </div>
               <div className="form-row">
-                <label htmlFor="email">Email</label>
                 <input
                   type="email"
                   name="email"
+                  placeholder="Email"
                   id="email"
                   value={values.email}
                   onChange={handleChange}
@@ -145,10 +144,10 @@ const Form = () => {
                 )}
               </div>
               <div className="form-row">
-                <label htmlFor="phone">Teléfono</label>
                 <input
                   type="phone"
                   name="phone"
+                  placeholder="Teléfono"
                   id="phone"
                   value={values.phone}
                   onChange={handleChange}
@@ -162,10 +161,10 @@ const Form = () => {
                 )}
               </div>
               <div className="form-row">
-                <label htmlFor="event_type">Tipo de evento</label>
                 <input
                   type="event_type"
                   name="event_type"
+                  placeholder="Tipo de evento"
                   id="event_type"
                   value={values.event_type}
                   onChange={handleChange}
@@ -181,11 +180,13 @@ const Form = () => {
                 )}
               </div>
               <div className="form-row">
-                <label htmlFor="message">Mensaje</label>
                 <textarea
                   type="message"
                   name="message"
+                  placeholder="Mensaje"
                   id="message"
+                  rows="5"
+                  cols="40"
                   value={values.message}
                   onChange={handleChange}
                   onBlur={handleBlur}

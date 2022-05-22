@@ -1,0 +1,17 @@
+$primary-color: #a67c52;
+
+.container-footer {
+  height: 50px;
+  color: $primary-color;
+  text-align: center;
+  background-color: rgb(2, 10, 18);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+}
+
+.container-footer h1 {
+  padding: 25px;
+  font-size: 20px;
+}
