@@ -1,0 +1,28 @@
+.VideoRow-wrapper {
+  margin-top: 118px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.info-videoRow {
+  color: #c4c8cd;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.info-videoRow h1 {
+  color: #a67c52;
+  font-size: 28px;
+  margin-top: 25px;
+}
+
+.info-videoRow p {
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
+
+.info-videoRow a {
+  //   padding-top: 55px;
+  text-decoration: none;
+  color: #a67c52;
+}

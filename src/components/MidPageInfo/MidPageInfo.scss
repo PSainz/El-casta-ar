@@ -1,0 +1,33 @@
+.container-MidPageInfo {
+  margin-top: 20px;
+  color: #c4c8cd;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.container-users {
+  text-align: center;
+}
+
+.container-MidPageInfo .container-users img {
+  height: 100px;
+  filter: invert(47%) sepia(81%) saturate(240%) hue-rotate(349deg)
+    brightness(93%) contrast(89%);
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+
+.container-mountain {
+  text-align: center;
+  color: #c4c8cd;
+}
+
+.container-MidPageInfo .container-mountain img {
+  height: 120px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  filter: invert(47%) sepia(81%) saturate(240%) hue-rotate(349deg)
+    brightness(93%) contrast(89%);
+}

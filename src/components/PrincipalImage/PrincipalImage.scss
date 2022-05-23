@@ -1,0 +1,25 @@
+// $src: "./images/foto-principal.jpg";
+
+.container-principal-image {
+  margin-top: 75px;
+  height: 50vh;
+  width: 100%;
+  background-image: url("../../../public/images/foto-principal.jpg");
+  background-repeat: no-repeat;
+  // background-attachment: fixed;
+  background-position: center;
+}
+
+.container-principal-image h1 {
+  color: white;
+  text-align: center;
+  padding-top: 120px;
+  font-size: 90px;
+}
+
+.container-principal-image p {
+  color: white;
+  text-align: center;
+  // padding-top: 100px;
+  font-size: 40px;
+}
