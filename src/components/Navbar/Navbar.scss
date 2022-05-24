@@ -47,7 +47,7 @@
   width: 40px;
   padding: 0.5rem;
   border-radius: 50%;
-  background-color: #283b8b;
+  background-color: #a67c52;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
   // positions the icon to the right and center aligns it vertically
@@ -58,16 +58,17 @@
   display: none;
 }
 .hamburger:hover {
-  background-color: #2642af;
+  background-color: #a67c52;
 }
 nav img {
   padding: 5px;
   width: 8%;
 }
-
+// max-width: 768px
 @media screen and (max-width: 768px) {
   .hamburger {
     display: block;
+    background-color: #a67c52;
   }
   .navigation-menu ul {
     display: none;
@@ -82,7 +83,7 @@ nav img {
     // makes menu span full height and width
     width: 100%;
     height: calc(100vh - 77px);
-    background-color: white;
+    background-color: black;
     border-top: 1px solid black;
   }
   .navigation-menu li {
@@ -91,15 +92,18 @@ nav img {
     margin: 0;
   }
   .navigation-menu li a {
-    color: black;
+    color: white;
     // increases the surface area of the anchor tag to span the full width of the menu
     width: 100%;
     padding: 1.5rem 0;
   }
   .navigation-menu li:hover {
-    background-color: #eee;
+    background-color: #a67c52;
   }
   .navigation-menu.expanded ul {
     display: block;
+  }
+  .navigation img {
+    width: 120px;
   }
 }

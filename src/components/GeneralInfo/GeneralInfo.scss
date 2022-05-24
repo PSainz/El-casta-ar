@@ -6,6 +6,7 @@
   text-align: center;
   line-height: 40px;
   font-size: 20px;
+  width: 100vw;
 }
 
 .texts-generalInfo {
@@ -35,4 +36,45 @@
   border-left: 2px solid white;
   margin-bottom: 30px;
   background-color: #a67c52;
+}
+
+@media screen and (max-width: 768px) {
+  .container-GeneralInfo {
+    padding: 22px;
+    color: #c4c8cd;
+    background-color: black;
+    text-align: center;
+    line-height: 32px;
+    font-size: 16px;
+    width: 100vw;
+  }
+
+  .texts-generalInfo {
+    margin-bottom: 90px;
+    margin-top: 50px;
+  }
+
+  .container-GeneralInfo a {
+    color: #a67c52;
+    text-decoration: none;
+    font-size: 28px;
+    padding: 6px 14px;
+    border-top: 2px solid #a67c52;
+    border-bottom: 2px solid #a67c52;
+    border-right: 2px solid #a67c52;
+    border-left: 2px solid #a67c52;
+  }
+
+  .container-GeneralInfo a:hover {
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    padding: 6px 14px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+    margin-bottom: 30px;
+    background-color: #a67c52;
+  }
 }

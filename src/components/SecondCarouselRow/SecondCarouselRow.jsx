@@ -1,12 +1,11 @@
 import React from "react";
 import "./SecondCarouselRow.scss";
-import { dataImagesEspacio } from "../../utils/dataImagesEspacio";
 
 function SecondCarouselRow() {
   return (
     <div className="SecondCarouselRow-wrapper">
       <div className="SecondCarouselRow-info">
-        <h1>Eventos realizados</h1>
+        <h1>Eventos</h1>
         <p>
           Sus 8.800 m2 de terreno son aptos para todos los eventos que puedas
           imaginar. Destacando su impresionante jardín,piscina climatizada,
@@ -19,7 +18,6 @@ function SecondCarouselRow() {
         </p>
         <a href="/contact">CONTACTANOS</a>
       </div>
-      <div className="carousel-second-row"></div>
     </div>
   );
 }

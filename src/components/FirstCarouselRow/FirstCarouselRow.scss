@@ -2,10 +2,11 @@
   margin-top: 50px;
   display: flex;
   justify-content: space-evenly;
-  //   align-items: center;
   background-color: black;
   color: #c4c8cd;
+  width: 100vw;
 }
+
 .carousel {
   margin-top: 50px;
 }
@@ -26,4 +27,41 @@
   margin-top: 20px;
   line-height: 34px;
   font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .FirstCarouselRow-wrapper {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: black;
+    color: #c4c8cd;
+    width: 100vw;
+    // margin-bottom: -30px;
+  }
+
+  .carousel {
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .FirstCarouselRow-info {
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .FirstCarouselRow-info h1 {
+    color: #a67c52;
+    font-size: 34px;
+    margin-top: 25px;
+    margin-bottom: 55px;
+  }
+
+  .FirstCarouselRow-info p {
+    margin-top: 20px;
+    line-height: 24px;
+    font-size: 18px;
+  }
 }

@@ -4,6 +4,7 @@ import Footer from "../Footer/Footer";
 import VideoRow from "../VideoRow/VideoRow";
 import FirstCarouselRow from "../FirstCarouselRow/FirstCarouselRow";
 import SecondCarouselRow from "../SecondCarouselRow/SecondCarouselRow";
+import Prefooter from "../Prefooter/Prefooter";
 
 function OurSpacePage() {
   return (
@@ -12,7 +13,8 @@ function OurSpacePage() {
       <VideoRow />
       <FirstCarouselRow />
       <SecondCarouselRow />
-      {/* <Footer /> */}
+      <Prefooter />
+      <Footer />
     </div>
   );
 }
