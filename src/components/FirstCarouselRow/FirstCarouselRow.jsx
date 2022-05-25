@@ -12,7 +12,8 @@ function FirstCarouselRow() {
     fontSize: "20px",
     fontWeight: "bold",
   };
-
+  const resolution = window.innerWidth;
+  const isMobile = resolution >= 320 && resolution <= 480;
   function Desktop() {
     return (
       <div className="FirstCarouselRow-wrapper">
@@ -121,20 +122,18 @@ function FirstCarouselRow() {
       </div>
     );
   }
-  const resolution = window.innerWidth;
-  const isMobile = resolution >= 320 && resolution <= 480;
-  // const isTablet = resolution >= 768 && resolution <= 1024;
-  const isDesktop = !isMobile;
-  console.log(resolution);
+
   return (
-    <div className="forecastInfo">
-      <div className="morning">
+    <div>
+      <div>
         {isMobile ? (
           <React.Fragment>
             <Mobile />
           </React.Fragment>
         ) : (
-          <Desktop />
+          <React.Fragment>
+            <Desktop />
+          </React.Fragment>
         )}
       </div>
     </div>

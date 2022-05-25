@@ -36,6 +36,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     width: 100%;
+    margin-bottom: 30px;
   }
 
   .info-videoRow {
@@ -46,9 +47,10 @@
     line-height: 45px;
   }
 
-  .info-videoRow h1 {
+  .VideoRow-wrapper h1 {
     color: #a67c52;
     font-size: 20px;
+    padding-left: 15px;
   }
 
   .info-videoRow p {
