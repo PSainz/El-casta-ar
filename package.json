@@ -34,6 +34,7 @@
     "semantic-ui-react": "^2.1.2",
     "styled-components": "^5.3.5"
   },
+  "homepage": "https://xn--elcastaar-r6a.com/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
