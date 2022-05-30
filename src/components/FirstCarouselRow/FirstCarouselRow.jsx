@@ -26,7 +26,7 @@ function FirstCarouselRow() {
             slideNumber={true}
             slideNumberStyle={slideNumberStyle}
             captionPosition="bottom"
-            automatic={true}
+            automatic={false}
             dots={true}
             pauseIconColor="white"
             pauseIconSize="40px"
