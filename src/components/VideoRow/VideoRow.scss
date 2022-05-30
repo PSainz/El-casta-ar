@@ -2,12 +2,14 @@
   margin-top: 118px;
   display: flex;
   justify-content: space-evenly;
+  width: 100%;
 }
 
 .info-videoRow {
   color: #c4c8cd;
   text-align: center;
   margin-top: 25px;
+  margin-left: 240px;
 }
 
 .info-videoRow h1 {
@@ -25,4 +27,40 @@
   //   padding-top: 55px;
   text-decoration: none;
   color: #a67c52;
+}
+
+@media screen and (max-width: 768px) {
+  .VideoRow-wrapper {
+    // margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .info-videoRow {
+    color: #c4c8cd;
+    text-align: center;
+    margin-top: -55px;
+    margin-left: 0px;
+    line-height: 45px;
+  }
+
+  .VideoRow-wrapper h1 {
+    color: #a67c52;
+    font-size: 20px;
+    padding-left: 15px;
+  }
+
+  .info-videoRow p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .info-videoRow a {
+    //   padding-top: 55px;
+    text-decoration: none;
+    color: #a67c52;
+  }
 }

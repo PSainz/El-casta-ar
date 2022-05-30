@@ -1,7 +1,7 @@
 .wrapper-contact-page {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 100vw;
   margin-top: 100px;
   margin-bottom: 30px;
 }
@@ -17,4 +17,28 @@
 }
 .width {
   width: 5%;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper-contact-page {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+  .full-wrapper-contact-page {
+    background-color: rgb(2, 10, 18);
+  }
+
+  .flex {
+    // border: 1px solid green;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .width {
+    width: 5%;
+  }
 }
